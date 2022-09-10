@@ -38,18 +38,20 @@
             // 
             this.cmbSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSelect.FormattingEnabled = true;
-            this.cmbSelect.Location = new System.Drawing.Point(80, 80);
+            this.cmbSelect.Location = new System.Drawing.Point(120, 123);
+            this.cmbSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbSelect.Name = "cmbSelect";
-            this.cmbSelect.Size = new System.Drawing.Size(191, 28);
+            this.cmbSelect.Size = new System.Drawing.Size(284, 37);
             this.cmbSelect.TabIndex = 0;
             // 
             // lblSelect
             // 
             this.lblSelect.AutoSize = true;
             this.lblSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelect.Location = new System.Drawing.Point(76, 57);
+            this.lblSelect.Location = new System.Drawing.Point(114, 88);
+            this.lblSelect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelect.Name = "lblSelect";
-            this.lblSelect.Size = new System.Drawing.Size(132, 20);
+            this.lblSelect.Size = new System.Drawing.Size(202, 29);
             this.lblSelect.TabIndex = 1;
             this.lblSelect.Text = "Select Employee:";
             this.lblSelect.Click += new System.EventHandler(this.lblSelect_Click);
@@ -58,31 +60,35 @@
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(37, 9);
+            this.lblHeading.Location = new System.Drawing.Point(56, 14);
+            this.lblHeading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(277, 29);
+            this.lblHeading.Size = new System.Drawing.Size(397, 40);
             this.lblHeading.TabIndex = 11;
             this.lblHeading.Text = "Employee Termination";
             // 
             // btnFire
             // 
             this.btnFire.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFire.Location = new System.Drawing.Point(107, 132);
+            this.btnFire.Location = new System.Drawing.Point(160, 203);
+            this.btnFire.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFire.Name = "btnFire";
-            this.btnFire.Size = new System.Drawing.Size(149, 30);
+            this.btnFire.Size = new System.Drawing.Size(224, 46);
             this.btnFire.TabIndex = 12;
             this.btnFire.Text = "Fire Employee";
             this.btnFire.UseVisualStyleBackColor = true;
+            this.btnFire.Click += new System.EventHandler(this.btnFire_Click);
             // 
             // frmFireEmployees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 245);
+            this.ClientSize = new System.Drawing.Size(530, 377);
             this.Controls.Add(this.btnFire);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.cmbSelect);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmFireEmployees";
             this.Text = "frmFireEmployees";
             this.Load += new System.EventHandler(this.frmFireEmployees_Load);

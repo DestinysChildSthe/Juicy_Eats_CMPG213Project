@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Juicy_Eats_CMPG213Project
 {
@@ -16,6 +17,12 @@ namespace Juicy_Eats_CMPG213Project
         {
             InitializeComponent();
         }
+
+        string constr = @"Data Source=DESKTOP-DOH888P;Initial Catalog=JuicyEats;Integrated Security=True";
+        SqlConnection con;
+        SqlCommand cmd;
+        SqlDataReader myReader;
+        private static string encryptPass = "";
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -77,7 +84,19 @@ namespace Juicy_Eats_CMPG213Project
 
         private void viewEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+             
+        }
 
+        private void employeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void placeSalesOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOrder myFormView = new frmOrder();
+            myFormView.MdiParent = this;
+            myFormView.ShowDialog();
         }
     }
 }

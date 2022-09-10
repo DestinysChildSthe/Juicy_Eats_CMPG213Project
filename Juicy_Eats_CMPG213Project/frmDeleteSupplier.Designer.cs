@@ -37,20 +37,23 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(81, 147);
+            this.btnDelete.Location = new System.Drawing.Point(122, 226);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(149, 30);
+            this.btnDelete.Size = new System.Drawing.Size(224, 46);
             this.btnDelete.TabIndex = 20;
             this.btnDelete.Text = "Delete Supplier";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblHeading
             // 
             this.lblHeading.AutoSize = true;
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(44, 9);
+            this.lblHeading.Location = new System.Drawing.Point(66, 14);
+            this.lblHeading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(217, 29);
+            this.lblHeading.Size = new System.Drawing.Size(308, 40);
             this.lblHeading.TabIndex = 19;
             this.lblHeading.Text = "Supplier Deletion";
             // 
@@ -58,9 +61,10 @@
             // 
             this.lblSelect.AutoSize = true;
             this.lblSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelect.Location = new System.Drawing.Point(61, 62);
+            this.lblSelect.Location = new System.Drawing.Point(92, 95);
+            this.lblSelect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelect.Name = "lblSelect";
-            this.lblSelect.Size = new System.Drawing.Size(120, 20);
+            this.lblSelect.Size = new System.Drawing.Size(184, 29);
             this.lblSelect.TabIndex = 18;
             this.lblSelect.Text = "Select Supplier:";
             // 
@@ -68,22 +72,25 @@
             // 
             this.cmbSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSelect.FormattingEnabled = true;
-            this.cmbSelect.Location = new System.Drawing.Point(65, 85);
+            this.cmbSelect.Location = new System.Drawing.Point(98, 131);
+            this.cmbSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbSelect.Name = "cmbSelect";
-            this.cmbSelect.Size = new System.Drawing.Size(191, 28);
+            this.cmbSelect.Size = new System.Drawing.Size(284, 37);
             this.cmbSelect.TabIndex = 17;
             // 
             // frmDeleteSupplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 252);
+            this.ClientSize = new System.Drawing.Size(477, 388);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.cmbSelect);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmDeleteSupplier";
             this.Text = "frmDeleteSupplier";
+            this.Load += new System.EventHandler(this.frmDeleteSupplier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
